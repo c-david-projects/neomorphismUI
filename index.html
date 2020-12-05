@@ -150,17 +150,24 @@ p {
 }
 
         </style>
+        <script>
+            function playSound () {
+    document.getElementById('play').play();
+}            
+        </script>
     </head>
     <body>
+
+        <audio id="play" src="tick.wav"></audio>
         <div class="header">
             <a href="#default" class="logo"><b>My Enterprise Company</b></a>
             <div class="header-right">
-                <a href="#home">Home&nbsp;&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
-                <a href="#contact">Contact&nbsp;&nbsp;&nbsp;<i class="fa fa-address-book"></i></a>
-                <a href="#about">About&nbsp;&nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
-                <a href="#link4">Link 4&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
-                <a href="#link5">Link 5&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
-                <a href="#link6">Link 6&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
+                <a href="#home"   onclick="playSound()">Home&nbsp;&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="#contact"onclick="playSound()">Contact&nbsp;&nbsp;&nbsp;<i class="fa fa-address-book"></i></a>
+                <a href="#about" onclick="playSound()">About&nbsp;&nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
+                <a href="#link4" onclick="playSound()">Link 4&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
+                <a href="#link5" onclick="playSound()">Link 5&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
+                <a href="#link6" onclick="playSound()">Link 6&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
             </div>
         </div>
     
