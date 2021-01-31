@@ -1,231 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
 
-body {
-    margin:0;
-    font-family: 'open_sansregular';
-    background-color:#dedede ;
-    color: #4e4747;
+    <!-- Script para tocar som on click -->
 
-}
+    <script>
+        function playSound() {
+            document.getElementById('play').play();
+        }
+    </script>
 
-p {
-    font-size: 13px;
-}
+</head>
 
-.card {
-  width: 10%;
-  padding: 5%;
-  margin:3%;
-  border-radius: 5px;
-  height: 100%;
-  background:#dedede;
-  box-shadow: 6px 6px 12px #a4a4a4, -6px -6px 12px #ffffff;
-  border-radius: 14px;
-}
+<body>
 
-
- .card img{
-    border-radius: 5px;
-    border-radius: 38px;
-
-    box-shadow:  7px 7px 11px #b2b2b2, 
-             -7px -7px 11px #ffffff;
- }
-
- b {
-     margin-left:16px;
- }
-
-
-.content{
-    display:inline-flex;
-    margin-bottom: 100px;
-}
-
-
-.header {
-    overflow: hidden;
-    padding: 20px 10px;
-    padding: 20px 10px;
-    border-radius: 1px 0px 0px 37px;
-    background: #dedede;
-    box-shadow: 6px 6px 12px #a4a4a4, -6px -6px 12px #ffffff; 
-    margin-left: 53px;
-    color: #4e4747;
-
-
-}
-
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  color: #4e4747;
-  font-weight: bold;
-}
-
-
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.header a.logo:hover {
-  background:#dedede
-}
-
-.logo{
-    margin-left: 4%;
-    margin-top: 13px;
-}
-
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-.header-right{
-    float: right;
-}
-
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #f1f1f1;
-   color: #4e4747;
-   text-align: center;
-   width: 100%;
-   background:#dedede;
-   box-shadow:  -5px -5px 10px #b2b2b2, 
-             5px 5px 10px #ffffff;
-
-}
-
-.header-right a {
-    background: #dedede;
-    box-shadow: 6px 6px 12px #a4a4a4, -6px -6px 12px #ffffff;
-    margin: 13px;
-    border-radius: 14px;
-}
-
-.header img {
-    width:50px;
-    height:50px;
-}
-
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  .header-right {
-    float: none;
-  }
-}
-
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2'),
-         url('opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-        </style>
-        <script>
-            function playSound () {
-              document.getElementById('play').play();
-        }            
-        </script>
-    </head>
-    <body>
-
-        <audio id="play" src="tick.wav"></audio>
-        <div class="header">
-            <a href="#default" class="logo"><b>My Enterprise Company</b></a>
-            <div class="header-right">
-                <a href="#home"   onclick="playSound()">Home&nbsp;&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
-                <a href="#contact"onclick="playSound()">Contact&nbsp;&nbsp;&nbsp;<i class="fa fa-address-book"></i></a>
-                <a href="#about" onclick="playSound()">About&nbsp;&nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
-                <a href="#link4" onclick="playSound()">Link 4&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
-                <a href="#link5" onclick="playSound()">Link 5&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
-                <a href="#link6" onclick="playSound()">Link 6&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
-            </div>
+    <audio id="play" src="tick.wav"></audio>
+    <div class="header">
+        <a href="#default" class="logo"><b>My Enterprise Company</b></a>
+        <div class="header-right">
+            <a href="#home" onclick="playSound()">Home&nbsp;&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="#contact" onclick="playSound()">Contact&nbsp;&nbsp;&nbsp;<i class="fa fa-address-book"></i></a>
+            <a href="#about" onclick="playSound()">About&nbsp;&nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
+            <a href="#link4" onclick="playSound()">Link 4&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
+            <a href="#link5" onclick="playSound()">Link 5&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
+            <a href="#link6" onclick="playSound()">Link 6&nbsp;&nbsp;&nbsp;<i class="fa fa-link"></i></a>
         </div>
-    
-        <div class="content">
-            <br />
-    
-            <div class="card">
-                <img src="img_avatar.png" alt="Avatar" style="width: 100%;" />
-                <div class="container">
-                    <h4><b>John Doe</b></h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="img_avatar2.png" alt="Avatar" style="width: 100%;" />
-                <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p class="align-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="img_avatar.png" alt="Avatar" style="width: 100%;" />
-                <div class="container">
-                    <h4><b>John Doe</b></h4>
-                    <p class="align-right">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="img_avatar2.png" alt="Avatar" style="width: 100%;" />
-                <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-    </body>
-    
-    <div class="footer">
-        <p>César Martins Lima</p>
     </div>
-    
+    <h1 class="title">Teams Communication</h1>
+    <div class="content">
+        <br />
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar_op.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+        <!-- <p class="desc">
+            Loremss ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, in pretium orci
+            vestibulum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor. Integer eu nibh at
+            nisi ullamcorper sagittis id vel leo. Integer feugiat faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. Cras pharetra mi tristique sapien vestibulum
+            lobortis. Nam eget bibendum metus, non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus
+        </p> -->
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar2.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar4.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar2.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar4.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+        <div class="card" onclick="playSound()">
+            <img src="img/img_avatar4.png" alt="Avatar" style="width: 100%;" />
+            <p class="txt-align">click here for more information</p>
+        </div>
+
+    </div>
+</body>
+
+<div class="footer">
+
+    <p>César Martins Lima
+
+
+        <!-- Script Para Manter Data Actualizada -->
+
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+
+    </p>
+</div>
+
 </html>

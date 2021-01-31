@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'fredoka';
+    background-color: #dedede;
+    color: #4e4747;
+}
+
+p {
+    font-size: 13px;
+}
+
+.card {
+    flex-basis: 9%;
+    padding: 5%;
+    margin: 3%;
+    border-radius: 5px;
+    height: 100%;
+    background: #dedede;
+    box-shadow: 6px 6px 12px #a4a4a4, -6px -6px 12px #ffffff;
+    border-radius: 14px;
+}
+
+.card:active {
+    opacity: 2%;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 5px;
+    box-shadow: 7px 7px 11px #b2b2b2, -7px -7px 11px #ffffff;
+}
+
+.header-right a:active {
+    opacity: 2%;
+}
+
+b {
+    margin-left: 16px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 1px 0px 0px 37px;
+    background: #dedede;
+    box-shadow: 6px 6px 12px #a4a4a4, -6px -6px 12px #ffffff;
+    margin-left: 53px;
+    color: #4e4747;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    color: #4e4747;
+    font-weight: bold;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a.logo:hover {
+    background: #dedede;
+}
+
+.logo {
+    margin-left: 4%;
+    margin-top: 13px;
+}
+
+.desc {
+    width: 60%;
+    font-size: 120%;
+}
+
+.txt-align {
+    text-align: center;
+}
+
+.header-right {
+    float: right;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #4e4747;
+    text-align: center;
+    width: 100%;
+    background: #dedede;
+    box-shadow: -5px -5px 10px #b2b2b2, 5px 5px 10px #ffffff;
+}
+
+.header-right a {
+    background: #dedede;
+    box-shadow: 6px 6px 12px #a4a4a4, -6px -6px 12px #ffffff;
+    margin: 13px;
+    border-radius: 14px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-right {
+        float: none;
+        width: 100%;
+    }
+    .header-right a {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .desc {
+        font-size: 85%;
+        padding-right: 15px
+    }
+}
+
+@font-face {
+    font-family: 'fredoka';
+    src: url('fredokaone-regular-webfont.woff2') format('woff2'), url('fredokaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
